@@ -1,0 +1,318 @@
+@media (min-width: 992px){
+    .navbar-expand-lg .navbar-collapse {
+        flex-basis: 100% !important;
+        display: block !important;
+    }
+
+    [type="button"]:not(:disabled), [type="reset"]:not(:disabled), [type="submit"]:not(:disabled), button:not(:disabled) {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 991px){
+
+    body{
+        background-position-x: -23em;
+    }
+
+    .logo_black img{
+        display: block;
+        width: 280px;
+        padding-bottom: 20px;
+        margin: 0 auto;
+        padding-top: 20px;
+    }
+
+    .main-menu{
+        overflow-y: scroll;
+        padding-bottom: 60px;
+        top: 0px;
+        transform: translateX(-102%);
+        border-top: 1px solid #ededed;
+        bottom: 0;
+        width: 55%;
+        height: 100%;
+        position: fixed;
+        background-color: #fff;
+        float: none;
+        left: 0;
+        transition: all .5s cubic-bezier(.77,0,.175,1);
+        
+    }
+
+    .main-menu.show {
+        transform: translateX(0);
+    }
+
+    .main-menu ul > li{
+        padding-bottom: 0;
+    }
+
+    .main-menu ul li{
+        border-top: none;
+        border-bottom: 1px solid #ededed;
+    }
+
+    .main-menu > ul > li > a{
+        color: #555
+    }
+
+    .main-menu a, .main-menu li{
+        display: block;
+    }
+
+    .main-menu > ul > li > a.btn_btn__1{
+        top: 0px;
+        padding: 8px 8px;
+        background-color: transparent;
+        border: none;
+        color: #555555;
+    }
+
+    .main-menu > ul > li > a.btn_btn__1:hover{
+        box-shadow: none !important;
+        border-bottom: 1px solid#70a7d8;
+    }
+    
+    .navbar-toggler{
+        padding: .25rem .75rem;
+        font-size: 24px;
+        line-height: 1;
+        background-color: transparent;
+        border: 1px solid transparent;
+        border-radius: .25rem;
+        display: block;
+        position: relative;
+        position: absolute;
+        top: 0px;
+        right: 0px;;
+        appearance: none;
+        box-shadow: none;
+        border: none;
+        cursor: pointer;
+    }
+    
+    .menu-toggle {
+        padding: .25rem .75rem;
+        font-size: 24px;
+        line-height: 1;
+        background-color: transparent;
+        border: 1px solid transparent;
+        border-radius: .25rem;
+        display: block;
+        position: relative;
+        position: absolute;
+        top: 0px;
+        right: 0px;;
+        appearance: none;
+        box-shadow: none;
+        border: none;
+        cursor: pointer;
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
+        -webkit-transition: .5s ease-in-out;
+        -moz-transition: .5s ease-in-out;
+        -o-transition: .5s ease-in-out;
+        transition: .5s ease-in-out;
+        cursor: pointer;
+        
+        width: 40px;
+    }
+   
+    .menu-toggle i,
+    .menu-toggle i:after,
+    .menu-toggle i:before {
+        display: block;
+        position: absolute;
+        height: 3px;
+        width: 28px;
+        right: 0;
+        background: #fff;
+        border-radius: 2px;
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
+        -webkit-transition: .25s ease-in-out;
+        -moz-transition: .25s ease-in-out;
+        -o-transition: .25s ease-in-out;
+        transition: .25s ease-in-out;
+    }
+    .menu-toggle i:after,
+    .menu-toggle i:before {
+        content: '';
+    }
+    .menu-toggle i:after {
+        top: -20px;
+    }
+    .menu-toggle i:before {
+        top: -10px;
+    }
+    .menu-toggle i {
+        top: -16px;
+        background-color: #fff;
+    }
+    .menu-toggle.open i:after {
+        -webkit-transform: rotate(45deg);
+        -moz-transform: rotate(45deg);
+        -o-transform: rotate(45deg);
+        transform: rotate(45deg);
+        top: -22px;
+    }
+    .menu-toggle.open i:before {
+        -webkit-transform: rotate(-45deg);
+        -moz-transform: rotate(-45deg);
+        -o-transform: rotate(-45deg);
+        transform: rotate(-45deg);
+        top: -22px;
+    }
+
+    .box_feat span{
+        top: 100%;
+        left: 50%;
+        margin: -20px 0 0 -35px;
+        transform: rotate(90deg);
+        z-index: 1;
+    }
+
+    .cta_subscribe img{
+        width: 69px;
+    }
+
+    .cta_subscribe h3{
+        font-size: 21px;
+    }
+
+    .cta_subscribe p{
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 767px){
+
+    body {
+        background-position-x: -41em;
+        background-position-y: -20em;
+    }
+
+    .logo_black img{
+        width: 200px;
+    }
+
+   
+
+    h1{
+        font-size: 2.5rem !important;
+    }
+
+    .lead-3{
+        font-size: 1.3rem !important;
+    }
+
+    header{
+        margin-bottom: 60px;
+    }
+
+    .margin_120_95{
+        padding-top: 45px;
+    }
+}
+
+@media (max-width: 575px){
+
+    body {
+        background-position-x: -63em;
+        background-position-y: -2em;
+    }
+
+    .main-menu{
+        width: 70%;
+    }
+
+    .main-menu > ul > li > a{
+        font-size: 13px !important;
+    }
+
+    .btn-warning{
+        font-size: 16px;
+    }
+
+    .margin_120_95{
+        padding-top: 25px;
+    }
+
+    .main_title h2{
+        font-size: 30px;
+    }
+
+    .main_title p{
+        font-size: 22px;
+    }
+
+    .section-header{
+        margin-top: 0;
+    }
+}
+
+@media (max-width: 400px){
+
+    h1{
+        font-size: 1.8rem !important;
+    }
+
+    .lead-3{
+        font-size: 1.1rem !important;
+    }
+
+    .logo_home a{
+        width: 230px;
+    }
+
+    .main-menu{
+        width: 78%;
+    }
+
+    .main_title h2{
+        font-size: 22px;
+    }
+
+    .main_title p{
+        font-size: 17px;
+    }
+
+
+    figure{
+        margin: 0 0 10px;
+    }
+
+
+    .cta_subscribe img{
+        width: 60px;
+        height: 60px;
+    }
+
+    .cta_subscribe h3{
+        font-size: 19px;
+    }
+
+    .cta_subscribe p{
+        font-size: 13px;
+    }
+
+    .cta_subscribe .btn_1, .cta_subscribe a.btn_1{
+        font-size: 15px;
+    }
+
+    .section-header{
+        font-size: 15px;
+
+    }
+}
+
+@media (max-width: 340px){
+    .bg_image{
+        padding-bottom: 130px;
+    }
+}
